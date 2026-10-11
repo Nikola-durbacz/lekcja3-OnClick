@@ -1,0 +1,1 @@
+Wyświetlacz powinien pokazywać maksymalnie 10 znaków. Po etapie 1 trzeba byłoby wprowadzić zmianę w 10 osobnych metodach obsługujących cyfry. Po etapie 3 wystarczy zmienić jedną wspólną metodę appendSymbol(). Pokazuje to, że wspólna metoda ułatwia rozwijanie i utrzymywanie kodu.
