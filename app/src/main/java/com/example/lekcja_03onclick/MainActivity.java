@@ -56,13 +56,15 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button54).setOnClickListener(v -> clear());
     }
 
+
     private void appendSymbol(String symbol) {
         String currentText = tvDisplay.getText().toString();
 
-        if (startNewNumber || currentText.equals("0") || currentText.equals("Błąd")) {
+        if (startNewNumber || currentText.equals("0") || currentText.equals("Błąd")
+                || currentText.equals("Nie można dzielić przez 0")) {
             tvDisplay.setText(symbol);
             startNewNumber = false;
-        } else {
+        } else if (currentText.length() < 10) {
             tvDisplay.setText(currentText + symbol);
         }
     }
